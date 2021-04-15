@@ -87,47 +87,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+     width: 90%;
+}
+
    /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+ padding: 15px 0;
 }
 
 header .content-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /* over-riding browser default */
+  margin:0;
+}
+
+header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul{
-      display: flex;
-      justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-footer .social-icons{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+footer {
+  flex-direction: column;
 }
 
-footer .social p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+footer p {
+  /* over-riding browser default */
+  margin: 0;
 }
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  /* margin from solution code was 20px but my measurement is closer to 10px */
+  margin: 10px 0;
+}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -136,7 +176,6 @@ footer .social p{
 .hero-area {
       display: flex;
       justify-content: center;
-      /* align-items: center; */
       flex-flow: row wrap;
 }
 
@@ -153,24 +192,49 @@ aside {
 .features{
       display: flex;
       justify-content: center;
-      align-items: center;
+      /* align-items: center; */
       flex-flow: row wrap;
 }
 
-.features-item-description{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+.features h2 {
+  /* solution code says 60px but my measurement is between 65 and 70px */
+  margin-bottom: 65px;
+}
+
+.features article {
+  /* 200px / 320px */
+  width: 63%;
+  /* Unclear on margin measurements so added from solution code and will review */
+  margin:30px 0;
+}
+
+/* solution code has class as features-items only not .features-item-description */
+.features .features-item-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features p {
+  /* over-riding browser default */
+  margin: 0;
 }
 
 /* Reviews  */
 
 .reviews{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.reviews h2 {
+  /* solution code was 40px my measurement was 24px to top of images
+  below image was another 20px, is it usual practice to measure total
+  around image */
+  margin-bottom: 40px;
+  margin: 20px 0;
 }
 
 
@@ -179,31 +243,50 @@ aside {
    ========================================================================== */
 
 .mission{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .contact-section{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
 
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
 
-.faq{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
+/* added .faq .content-wrapper from solution code offset text on page */
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
