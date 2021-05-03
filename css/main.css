@@ -324,11 +324,17 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   /* over-riding browser default */
   text-align: center;
   margin: 0;
 }
+
 
 /* Reviews  */
 
