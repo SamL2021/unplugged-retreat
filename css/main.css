@@ -380,7 +380,7 @@ input[type=button] {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
 }
 
 .contact-section{
@@ -564,6 +564,16 @@ header nav ul {
 
 /* Hero Area */
 
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
+
 /* Aside */
 
 aside .content-wrapper {
@@ -580,6 +590,11 @@ aside .content-wrapper .form {
 }
 
 /* Features */
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
 .features article {
   display: flex;
   justify-content: center;
@@ -589,7 +604,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 /* Reviews */
@@ -598,8 +613,17 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
+.reviews h2 {
+  width: 85%;
+}
+
 .reviews article div {
    width: 49%;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
 }
 
 /* Footer */
@@ -656,6 +680,10 @@ footer .copyright {
   align-items: flex-start;
 }
 
+.contact-content h4 {
+  font-size: 1.5em;
+}
+
 /* ==========================================================================
  FAQ Page
  ========================================================================== */
@@ -708,7 +736,7 @@ header {
 /* Hero */
 .hero-area h1 {
   font-size: 3.75em;
-  width: 60%;
+  width: 80%;
 }
 
 /* Aside */
@@ -721,6 +749,10 @@ aside .content-wrapper .form {
   width: 30%;
 }
 
+.form-description p {
+  font-size: 1.125em;
+}
+
 /* Features */
 .features h2 {
   width: 90%;
@@ -731,12 +763,12 @@ aside .content-wrapper .form {
 }
 
 /* Reviews */
-.reviews article div {
-  width: 42%;
-}
-
 .reviews h2 {
   padding-bottom: 50px;
+}
+
+.reviews article div {
+  width: 42%;
 }
 
 footer h4 {
