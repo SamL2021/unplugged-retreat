@@ -115,8 +115,8 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
+  font-size: 1.875em;
   margin: 0;
 }
 
@@ -129,7 +129,7 @@ h4 {
 }
 
 p {
-  font-size: 0.875em;
+  font-size: .875em;
   line-height: 1.285;
 }
 
@@ -137,7 +137,7 @@ img {
   width: 100%;
 }
 
-figure{
+figure {
   margin: 0;
 }
 
@@ -148,7 +148,8 @@ address {
 
 .content-wrapper {
      width: 90%;
-     margin: 50px 0;
+     margin: 25px 0;
+     /* reduced margin */
 }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
@@ -168,7 +169,7 @@ header {
 
 header .content-wrapper {
   /* over-riding browser margin default */
-  margin:0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +184,7 @@ header figure {
   flex-flow: row wrap;
 }
 
-header-divider {
+.header-divider {
   /* Found in mobile photoshop file */
   background: #3a3a3a;
   height: 1px;
@@ -203,7 +204,7 @@ header nav {
 
 }
 
-header nav ul{
+header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -239,7 +240,7 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social p {
+footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
   /* round corners to make circle in CSS */
@@ -322,13 +323,13 @@ input[type=button] {
 }
 
 /* Features */
-.features{
-      background: url('../img/unplugged-features.jpg');
-      background-size: cover;
-      background position: center;
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
+.features {
+  background: url('../img/unplugged-features.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .features h2 {
@@ -341,12 +342,10 @@ input[type=button] {
   width: 63%;
   /* ? Unclear on margin measurements so added from solution
   code and need to review */
-  margin:30px 0;
+  margin: 30px 0;
 }
 
-/* Note: solution code has class as features-items only not
-.features-item-description */
-.features .features-item-description{
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,11 +366,11 @@ input[type=button] {
 
 /* Reviews  */
 
-.reviews{
+.reviews {
   background-color: #2a423a;
   display: flex;
-  justify-content: right;
-  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -392,7 +391,7 @@ input[type=button] {
    About Page
    ========================================================================== */
 
-.mission{
+.mission {
   background-color: #527158;
   display: flex;
   justify-content: center;
@@ -416,7 +415,7 @@ input[type=button] {
   left: 0;
 }
 
-.contact-section{
+.contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
@@ -442,7 +441,7 @@ input[type=button] {
 
 /* added .faq .content-wrapper from solution code offset text on page */
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
+  margin: 50, 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,7 +578,7 @@ header {
 }
 
 header .content-wrapper {
-  width: 100%
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -614,15 +613,16 @@ header nav ul {
 /* Aside */
 
 aside .content-wrapper {
-  margin: 50px 0;
+  margin: 25px 0;
+  /* reduced margin */
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
 }
 
-aside content-wrapper .form-description,
+aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width:40%;
+  width: 40%;
   margin: 0;
 }
 
@@ -672,13 +672,11 @@ aside .content-wrapper .form {
 footer .content-wrapper {
    width: 65%;
    margin: 100px 0;
-}
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 }
 
 footer .contact {
@@ -700,7 +698,7 @@ footer .social-icons {
 }
 
 footer .copyright {
-  width: 100%
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -711,7 +709,9 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px
+  padding-top: 20px;
+  flex-wrap: wrap;
+
 }
 
 .mission-content p {
@@ -760,7 +760,7 @@ footer .copyright {
 }
 
 @media only screen and (min-width: 1200px) {
-/*Desktop styles here */
+/*Desktop styles here*/
 
 header {
    padding: 15px 0;

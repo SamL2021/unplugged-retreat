@@ -15,3 +15,25 @@ C:\fakepath(77,8-28): warning X3571: pow(f, e) will not work for negative f, use
 [0415/112812.291:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 1612
 [0415/112812.291:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 842
 [0415/164130.889:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0504/163212.027:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot read property 'length' of undefined", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-learn/build/external.js (1)
+[0504/163215.035:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot read property 'length' of undefined", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-learn/build/external.js (1)
+[0504/163223.322:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot read property 'length' of undefined", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-learn/build/external.js (1)
+[0504/163320.699:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/163324.850:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/163325.754:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164025.700:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164030.706:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164035.722:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164040.727:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164045.747:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164050.767:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164055.778:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164100.798:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164105.817:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164110.829:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.306:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.447:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.494:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.541:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.715:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0504/164143.731:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
