@@ -94,15 +94,18 @@ html {
 
 body {
 /* Q. color from solution - where do I find on photoshop? Checked mobile and desktop files */
-  color: #e2e3ed;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
   text-align: left;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 a {
@@ -114,19 +117,28 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  margin: 20px 0;
   font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
   font-size: 0.875em;
   line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure{
+  margin: 0;
 }
 
 address {
@@ -155,37 +167,46 @@ header {
 }
 
 header .content-wrapper {
+  /* over-riding browser margin default */
+  margin:0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* over-riding browser default */
-  margin:0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header-divider {
   /* Found in mobile photoshop file */
   background: #3a3a3a;
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
 header nav {
-  display: flex;
+  width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+
 }
 
 header nav ul{
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 /* Q. Why is this repeated from header nav but affects the same text? */
@@ -199,7 +220,7 @@ footer {
 }
 
 footer p {
-  /* over-riding browser default */
+  /* over-riding browser margin default */
   margin: 0;
 }
 
@@ -219,14 +240,23 @@ footer .social-icons {
 }
 
 footer .social p {
+  background-color: #527158;
+  border-radius: 50%;
+  /* round corners to make circle in CSS */
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
 footer .copyright {
   /* margin from solution code was 20px but my measurement is closer to 10px */
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 
@@ -235,11 +265,11 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-      background: url('../img/unplugged_hero_img.jpg');
+      background: url('../img/unplugged-hero.jpg');
       background-size: cover;
       background-position: center;
       min-height: 500px;
-      background-color: #333;
+      /* background-color: #333; */
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
@@ -265,7 +295,6 @@ aside {
 }
 
 /* Form Styling - Homepage - Copied from lesson */
-
 aside .form {
   margin-top: 30px;
 }
@@ -294,7 +323,7 @@ input[type=button] {
 
 /* Features */
 .features{
-      background: url('../img/unplugged_features_img.jpg');
+      background: url('../img/unplugged-features.jpg');
       background-size: cover;
       background position: center;
       display: flex;
@@ -304,7 +333,7 @@ input[type=button] {
 
 .features h2 {
   /* solution code says 60px but my measurement is between 65 and 70px */
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .features article {
@@ -350,9 +379,7 @@ input[type=button] {
   below image was another 20px, is it usual practice to measure total
   around image */
   margin-bottom: 40px;
-  margin: 20px 0;
   line-height: 1;
-
 }
 
 /* Added from solution code */
@@ -556,6 +583,10 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
+header figure {
+   width: 30%;
+ }
+
 header nav {
   width: 20%;
 }
@@ -613,6 +644,10 @@ aside .content-wrapper .form {
   width: 62%;
 }
 
+.features i {
+    margin-bottom: 30px;
+  }
+
 /* Reviews */
 .reviews article {
   display: flex;
@@ -623,6 +658,7 @@ aside .content-wrapper .form {
   width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
    width: 49%;
 }
@@ -642,6 +678,7 @@ footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer .contact {
@@ -655,6 +692,11 @@ footer h4 {
 
 footer p {
     line-height: 1.285;
+}
+
+footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
 }
 
 footer .copyright {
@@ -674,6 +716,10 @@ footer .copyright {
 
 .mission-content p {
   width: 45%;
+}
+
+.map figure {
+    padding-bottom: 45.5%;
 }
 
 .contact-section .content-wrapper h2 {
@@ -724,19 +770,18 @@ header {
   max-width: 960px;
 }
 
+h2 {
+  font-size: 2.25em;
+}
 
-  h2 {
-    font-size: 2.25em;
-  }
+h3,
+h4 {
+    font-size: 1.875em;
+}
 
-  h3,
-  h4 {
-      font-size: 1.875em;
-  }
-
-  p {
-      font-size: 1.125em;
-      line-height: 1.333;
+p {
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
 /* Hero */
@@ -784,6 +829,10 @@ footer h4 {
 /* ==========================================================================
    About Page
    ========================================================================== */
+.map figure {
+  padding-bottom: 37.5%;
+}
+
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
@@ -806,9 +855,8 @@ footer h4 {
 .faq p {
     font-size: 1.125em;
     line-height: 1;
+  }
 }
-
-
 
 /* ==========================================================================
    Print styles.
